@@ -9,3 +9,4 @@
 | GET | `/api/admin/work-orders` | 知识任务清单 |
 | GET | `/api/shopfloor/dashboard` | 工程师任务工作台 |
 | POST | `/api/shopfloor/work-orders/{id}/reports` | 提交知识结果 |
+| POST | `/api/admin/knowledge-freshness` | 评估知识新鲜度和治理建议 |

@@ -62,6 +62,10 @@ cp .env.example .env
 docker compose up --build
 ```
 
+## 新增：知识新鲜度评估
+
+新增 `POST /api/admin/knowledge-freshness`，使用复核间隔、近 90 天浏览量、帮助率、关联事件和责任人状态计算知识新鲜度，并给出 `HEALTHY`、`PROMOTE`、`REVIEW` 或 `RETIRE` 建议，帮助知识运营人员建立持续治理队列。
+
 ## 从演示到生产
 
 仓库中的账号、客户、指标、工单和经营数据均为虚构演示数据。正式落地时应更换默认密码与 JWT 密钥，配置 HTTPS、最小权限、数据库备份、操作审计、脱敏策略，并按照所在行业完成安全与合规评估。
