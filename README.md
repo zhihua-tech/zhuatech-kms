@@ -81,3 +81,7 @@ docker compose up --build
 | ![知华科技微信咨询二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信咨询二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 搜索收录建议：KMS 源码、知识管理系统、企业知识库、文档评审、Java KMS、Vue KMS、企业级 KMS、知华科技、上海如静知华信息科技有限公司。
+
+## 知识缺口识别
+
+新增 `POST /api/kms/insights/knowledge-gap`，结合未命中搜索、重复工单、可用专家和相关条目计算主题缺口优先级，输出 `MONITOR`、`ASSIGN_EXPERT` 或 `CREATE_CONTENT`。
