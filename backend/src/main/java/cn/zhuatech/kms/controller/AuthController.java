@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.kms.controller;
 import cn.zhuatech.kms.common.ApiResponse; import cn.zhuatech.kms.dto.AuthDto.*; import cn.zhuatech.kms.repository.UserRepository; import cn.zhuatech.kms.security.JwtService; import cn.zhuatech.kms.service.CurrentUserService; import jakarta.validation.Valid; import org.springframework.security.authentication.*; import org.springframework.web.bind.annotation.*;
 @RestController @RequestMapping("/api/auth") public class AuthController {

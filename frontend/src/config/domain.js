@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'KMS',systemName:'企业知识管理系统',englishName:'KNOWLEDGE MANAGEMENT SYSTEM',
  theme:{primary:'#1f746d',dark:'#19302d',accent:'#b47735'},
