@@ -85,3 +85,7 @@ docker compose up --build
 ## 知识缺口识别
 
 新增 `POST /api/kms/insights/knowledge-gap`，结合未命中搜索、重复工单、可用专家和相关条目计算主题缺口优先级，输出 `MONITOR`、`ASSIGN_EXPERT` 或 `CREATE_CONTENT`。
+
+## 企业级知识发布治理
+
+新增 `POST /api/enterprise/kms/knowledge-publication`，覆盖编审分离、引用、权限、审批、可访问性、复审和责任人，返回 `PUBLISH / REVIEW / BLOCKED`。详见 [知识发布说明](docs/ENTERPRISE_KNOWLEDGE_PUBLICATION.md)。
