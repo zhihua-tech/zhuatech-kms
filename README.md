@@ -1,5 +1,7 @@
 # ZhuaTech KMS Community Edition
 
+2026-10-23 功能更新：**知识文档版本冲突识别**。按文档编号、版本和内容指纹识别重复版本、同版本不同内容及最新有效版本；明确提示未发布或过期文档，不自动发布或覆盖知识库。 [接口、操作与边界说明](docs/AI_PRACTICAL_UPGRADE_20261023.md)。
+
 [简体中文](README.md) | [English](README.en.md)
 
 ## 企业知识管理系统
