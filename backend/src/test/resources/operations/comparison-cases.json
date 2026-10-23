@@ -1,0 +1,67 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    }
+  },
+  {
+    "patch": {
+      "approved": "NO"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    }
+  },
+  {
+    "patch": {
+      "refreshedChunks": "99"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "staleChunks": "#1"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    }
+  },
+  {
+    "patch": {
+      "reviewUntil": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    }
+  },
+  {
+    "patch": {
+      "reviewUntil": "2026-10-23"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    }
+  }
+]
