@@ -1,0 +1,91 @@
+{
+  "slug": "kms",
+  "title": "知识版本发布与复核期限",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "publishedVersion",
+      "label": "当前发布版本",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "1000000"
+    },
+    {
+      "key": "candidateVersion",
+      "label": "待发布版本",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "1000000"
+    },
+    {
+      "key": "approved",
+      "label": "候选已审批",
+      "type": "ENUM",
+      "options": [
+        "YES",
+        "NO"
+      ]
+    },
+    {
+      "key": "reviewUntil",
+      "label": "复核有效至",
+      "type": "DATE"
+    },
+    {
+      "key": "totalChunks",
+      "label": "候选索引分块数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "refreshedChunks",
+      "label": "已刷新分块数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "staleChunks",
+      "label": "未刷新分块"
+    },
+    {
+      "key": "reviewExpired",
+      "label": "复核已到期"
+    },
+    {
+      "key": "versionDelta",
+      "label": "版本增量"
+    }
+  ],
+  "description": "对知识文档的版本批准、复核到期日和待刷新索引条目做一致性核对；到期日当日有效，未经批准的版本不能被建议发布。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "publishedVersion": "3",
+        "candidateVersion": "4",
+        "approved": "YES",
+        "reviewUntil": "2026-11-01",
+        "totalChunks": "100",
+        "refreshedChunks": "100"
+      }
+    ]
+  }
+}

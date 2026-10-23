@@ -1,0 +1,61 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "staleChunks": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "approved": "NO"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "refreshedChunks": "99"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "staleChunks": "#1"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewUntil": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewUntil": "2026-10-23"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "candidateVersion": "2"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "refreshedChunks": "101"
+    },
+    "expected": {},
+    "error": true
+  }
+]
